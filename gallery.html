@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+    <title>LazyTown Image Gallery</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
+    <meta name="description" content="Joel Sullivan - CSS Mini Project">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+    <div id="tools" class="tools"></div>
 
-    <section id="gallery" class="gallery">
-        <div class="gallery-item" onclick="openModal('Photo 1', 'Description for Photo 1')">
-            <img src="image1.png" alt="Photo 1">
-        </div>
-        <div class="gallery-item" onclick="openModal('Photo 2', 'Description for Photo 2')">
-            <img src="image2.png" alt="Photo 2">
-        </div>
-        <div class="gallery-item" onclick="openModal('Photo 3', 'Description for Photo 3')">
-            <img src="image3.png" alt="Photo 3">
-        </div>
-        <div class="gallery-item" onclick="openModal('Photo 3', 'Description for Photo 3')">
-            <img src="image4.png" alt="Photo 4">
-        </div>
-        <div class="gallery-item" onclick="openModal('Photo 4', 'Description for Photo 3')">
-            <img src="image5.png" alt="Photo 5">
-        </div>
-
+    <main class="gallery-container">
+      <h1 class="pagehead">The LazyTown Gallery</h1>
+      <section class="welcome-statement">
+        <p>
+          Dive into the vibrant world of <strong>LazyTown</strong> with our exclusive image gallery featuring your favorite characters and moments from the beloved show. 
+        </p>
+        <br>
+        <p>
+          From Stephanie's energetic dance moves to Sportacus's heroic stunts and Robbie Rotten's mischievous schemes, our gallery captures the essence of <strong>LazyTown’s</strong> charm and excitement. 
+        </p>
     </section>
+      <div class="gallery">
+          <img class="slide" src="images/gallery/carousel1.jpg" alt="Carousel Image 1">
+      </div>
+      <div class="gallery">
+          <img class="slide" src="images/gallery/carousel2.jpg" alt="Carousel Image 2">
+      </div>
+      <div class="gallery">
+          <img class="slide" src="images/gallery/carousel3.jpg" alt="Carousel Image 3">
+      </div>
+      <div class="gallery">
+          <img class="slide" src="images/gallery/carousel4.jpg" alt="Carousel Image 4">
+      </div>
+      <div class="gallery">
+          <img class="slide" src="images/gallery/carousel5.jpg" alt="Carousel Image 5">
+      </div>
+      <div class="gallery">
+          <img class="slide" src="images/gallery/carousel6.jpg" alt="Carousel Image 6">
+      </div>
+      <div class="gallery">
+          <img class="slide" src="images/gallery/carousel7.jpg" alt="Carousel Image 7">
+      </div>
+      <div class="gallery">
+          <img class="slide" src="images/gallery/carousel8.jpg" alt="Carousel Image 8">
+      </div>
+  </main>
 
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
