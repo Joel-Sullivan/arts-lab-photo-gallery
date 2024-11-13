@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" id="navbtn" class="closebtn">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="staff.html">Our Staff</a>
+        <a href="gallery.html">Image Gallery</a>
+    </div>
+
+    <header>
+        <span id="navbtn" class="bmenu">&#9776;</span>
+        <h1 class="mainhead">Photo Gallery</h1>
+    </header>
+
+    <div id="tools" class="tools"></div>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to Photo Gallery</h2>
+            <p>Discover a world of stunning photos, from breathtaking landscapes to intimate moments captured through
+                the lens. Our curated gallery showcases the beauty of photography, providing a space for both
+                photographers and admirers to explore and enjoy.</p>
+        </section>
+
+        <section class="description">
+            <h2>About Our Website</h2>
+            <p>Our photo gallery website is a hub for high-quality images and visual storytelling. Whether you're a
+                professional photographer looking to share your work or a visitor seeking inspiration, we aim to offer
+                an immersive and visually engaging experience. Each photograph tells a story, and we invite you to
+                explore the creativity and passion behind every image.</p>
+        </section>
+        <section id="gallery" class="gallery">
+            <div class="gallery-item"
+                onclick="openModal('Photo 1', 'My inspiration behind this photo was the reflective natures of the slide. It was a sharp turn, and I thought that it would look good to have a flash shot on as I’m going down it. The shot demonstrates high key lighting, and it has a blur to it, which is good as it further emphasizes the light.', 'image1.png')">
+                <img src="image1.png" alt="Photo 1">
+            </div>
+            <div class="gallery-item"
+                onclick="openModal('Photo 2', 'The inspiration behind this photo was the reflective puddle of water and theme of death. The leaf is withering away in the pool of water, and it is resting peacefully. I used a high angle as it was representative of the leaf being down, as it withered away.', 'image2.png')">
+                <img src="image2.png" alt="Photo 2">
+            </div>
+            <div class="gallery-item"
+                onclick="openModal('Photo 3', 'This leaf is like one above, however, it has not fully rotted away and is waiting to wither. It is whole and has just recently died. I used low key lighting for the shot to emphasize the theme of death within the leaf.', 'image3.png')">
+                <img src="image3.png" alt="Photo 3">
+            </div>
+            <div class="gallery-item"
+                onclick="openModal('Photo 4', 'This image is of multiple tree branches coming together to form a roof under the floor. It is a place of stability in nature as it seems like nature is covering you. I used a low angle to get a shot of the roof. ', 'image4.png')">
+                <img src="image4.png" alt="Photo 4">
+            </div>
+            <div class="gallery-item"
+                onclick="openModal('Photo 5', 'For this image, of a crow stopped in motion, I was inspired by seeing walking around playground and was determined to get a shot of it. The photo itself shows the crow walking (well, jumping) not flying. The crow also juxtaposes the light background.', 'image5.png')">
+                <img src="image5.png" alt="Photo 5">
+            </div>
+            <div class="gallery-item"
+                onclick="openModal('Photo 6', 'This image is off a young pear tree with high key lighting to help show the glow going through the leaves. The picture represents life growing from a new, young tree and how nature always pushes through.', 'image6.png')">
+                <img src="image6.png" alt="Photo 1">
+            </div>
+            <div class="gallery-item"
+                onclick="openModal('Photo 7', 'This photo is off a tree behind a cloudy background, on a rainy day. The leaves represent life, yet they are behind sad, dark background, with a single ray of sun shining through.', 'image7.png')">
+                <img src="image7.png" alt="Photo 1">
+            </div>
+            <div class="gallery-item"
+                onclick="openModal('Photo 8', 'This photo is of a young man looking towards a new and brighter future after a hard day. I used high key lighting to represent hope and a high angle to further highlight the hope as it shines down', 'image8.png')">
+                <img src="image8.png" alt="Photo 1">
+            </div>
+            <div class="gallery-item"
+                onclick="openModal('Photo 9', 'This photo is a cross which was taken on the side. It purposefully does not include the full image of the cross as it is to show that what the cross represents does not have a full effect across different people.', 'image9.png')">
+                <img src="image9.png" alt="Photo 1">
+            </div>
+            <div class="gallery-item"
+                onclick="openModal('Photo 10', 'This photo shows coffee beans. A lot of people forget that one of the most common drinks comes from coffee beans and how these beans have caused mass addiction all across the world, affecting me as well.', 'image10.png')">
+                <img src="image10.png" alt="Photo 1">
+            </div>
+        </section>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal-image" src="" alt="Modal Image">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Joel: sullivanj@wesley.wa.edu.au</p>
+            <p>Sam: edwardsswesley.wa.edu.au</p>
+            <p>Phone: ([PLACEHOLDER]) [PLACEHOLDER]-[PLACEHOLDER]</p>
+            <p>Follow us on social media:</p>
+            <ul class="social-links">
+                <li><a href="#">[PLACEHOLDER]</a></li>
+                <li><a href="#">[PLACEHOLDER]</a></li>
+                <li><a href="#">[PLACEHOLDER]</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Photo Gallery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
